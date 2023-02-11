@@ -1,0 +1,32 @@
+<h1 class="text-center mb-3" data-django="text-default">
+ {{ txt_184fe478af63022bb3ae303c4ec84ea4_635.text }}
+</h1>
+<div class="border border-info rounded w-75 mx-auto p-3">
+ <div class="my-3">
+  <a class="btn btn-danger rounded" href="{% url 'social:begin' 'google-oauth2' %}">
+   <i class="fa fa-google-plus fa-fw">
+   </i>
+  </a>
+  <a class="btn btn-primary rounded" href="{% url 'social:begin' 'facebook' %}">
+   <i class="fa fa-facebook fa-fw">
+   </i>
+  </a>
+  <a class="btn btn-info rounded" href="{% url 'social:begin' 'twitter' %}">
+   <i class="fa fa-twitter fa-fw">
+   </i>
+  </a>
+  <a class="btn btn-warning" href="{% url 'reset_password' %}">
+   <i class="fa fa-at fa-fw">
+   </i>
+  </a>
+ </div>
+ <div class="login-form">
+  <form method="post">
+   {% csrf_token %}
+            {{ form.as_p }}
+   <button class="btn btn-primary btn-block" data-django="text-default" type="submit">
+    {{ txt_99dea78007133396a7b8ed70578ac6ae_635.text }}
+   </button>
+  </form>
+ </div>
+</div>

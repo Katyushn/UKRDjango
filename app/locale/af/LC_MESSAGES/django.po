@@ -1,0 +1,593 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-11 10:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\account\apps.py:8
+msgid "Personal office"
+msgstr ""
+
+#: .\account\forms.py:10 .\account\forms.py:15
+msgid "Password"
+msgstr ""
+
+#: .\account\forms.py:14 .\account\forms.py:50 .\account\models.py:34
+#: .\blog\forms.py:7
+msgid "Name"
+msgstr ""
+
+#: .\account\forms.py:14
+msgid "Maximum 150 characters"
+msgstr ""
+
+#: .\account\forms.py:16 .\account\forms.py:32
+msgid "Password confirmation"
+msgstr ""
+
+#: .\account\forms.py:30
+msgid "Old password"
+msgstr ""
+
+#: .\account\forms.py:31
+msgid "New password"
+msgstr ""
+
+#: .\account\forms.py:41
+msgid "The user with this email is not registered."
+msgstr ""
+
+#: .\account\forms.py:51
+msgid "Surname"
+msgstr ""
+
+#: .\account\forms.py:60 .\account\models.py:8
+msgid "Birthday"
+msgstr ""
+
+#: .\account\models.py:7
+msgid "User"
+msgstr ""
+
+#: .\account\models.py:9
+msgid "Foto"
+msgstr ""
+
+#: .\account\models.py:12
+msgid "Profile"
+msgstr ""
+
+#: .\account\models.py:13
+msgid "Profiles"
+msgstr ""
+
+#: .\account\models.py:24 .\account\models.py:25
+msgid "Subscriptions"
+msgstr ""
+
+#: .\account\models.py:35 .\account\models.py:38
+msgid "Message"
+msgstr ""
+
+#: .\account\models.py:39
+msgid "Messages"
+msgstr ""
+
+#: .\account\views.py:24
+msgid "You have successfully registered"
+msgstr ""
+
+#: .\account\views.py:27
+msgid "Registration error"
+msgstr ""
+
+#: .\account\views.py:73
+msgid "You have successfully changed your password"
+msgstr ""
+
+#: .\account\views.py:76
+msgid "Error"
+msgstr ""
+
+#: .\account\views.py:95
+msgid "You have successfully made changes"
+msgstr ""
+
+#: .\account\views.py:97
+msgid "Something went wrong"
+msgstr ""
+
+#: .\account\views.py:110
+msgid "Your application has been accepted"
+msgstr ""
+
+#: .\account\views.py:113
+msgid "Subscription error, perhaps this email is already registered"
+msgstr ""
+
+#: .\account\views.py:122
+msgid "Your message has been sent"
+msgstr ""
+
+#: .\account\views.py:125
+msgid "Error, message not sent"
+msgstr ""
+
+#: .\app\settings.py:157 .\app\settings.py:444 .\app\settings.py:445
+msgid "English"
+msgstr ""
+
+#: .\app\settings.py:314
+msgid "Welcome to the UKRDjango"
+msgstr ""
+
+#: .\app\settings.py:317
+msgid ""
+"UKRDjango, an open-source Django content management system powered by Python"
+msgstr ""
+
+#: .\app\settings.py:334
+msgid "Dashboard"
+msgstr ""
+
+#: .\app\settings.py:337
+msgid "Website"
+msgstr ""
+
+#: .\app\settings.py:340
+msgid "Translation"
+msgstr ""
+
+#: .\app\settings.py:444
+msgid "Russian"
+msgstr ""
+
+#: .\app\settings.py:444
+msgid "Ukrainian"
+msgstr ""
+
+#: .\app\settings.py:445
+msgid "Afrikaans"
+msgstr ""
+
+#: .\app\settings.py:445
+msgid "Arabic"
+msgstr ""
+
+#: .\blog\admin.py:36 .\blog\models.py:22 .\builder\models.py:252
+msgid "Images"
+msgstr ""
+
+#: .\blog\apps.py:7 .\builder\models.py:82 .\builder\models.py:171
+msgid "Blog"
+msgstr ""
+
+#: .\blog\feeds.py:8
+msgid "My blog"
+msgstr ""
+
+#: .\blog\feeds.py:10
+msgid "New posts of my blog."
+msgstr ""
+
+#: .\blog\forms.py:8
+msgid "Email from"
+msgstr ""
+
+#: .\blog\forms.py:9
+msgid "Email to"
+msgstr ""
+
+#: .\blog\forms.py:10 .\blog\models.py:64
+msgid "Comments"
+msgstr ""
+
+#: .\blog\models.py:12
+msgid "Standard"
+msgstr ""
+
+#: .\blog\models.py:13 .\shop\models.py:15
+msgid "Top"
+msgstr ""
+
+#: .\blog\models.py:14
+msgid "Banner"
+msgstr ""
+
+#: .\blog\models.py:16 .\blog\models.py:55 .\builder\models.py:21
+#: .\builder\models.py:87 .\builder\models.py:148 .\builder\models.py:180
+#: .\builder\models.py:227 .\builder\models.py:237 .\builder\models.py:247
+#: .\builder\models.py:257 .\builder\models.py:266 .\shop\models.py:22
+#: .\shop\models.py:100 .\shop\models.py:115
+msgid "Title"
+msgstr ""
+
+#: .\blog\models.py:17 .\builder\models.py:18 .\builder\models.py:22
+#: .\builder\models.py:88 .\builder\models.py:183 .\builder\models.py:256
+#: .\builder\models.py:261 .\builder\models.py:267 .\shop\models.py:23
+msgid "Link"
+msgstr ""
+
+#: .\blog\models.py:18 .\builder\models.py:23 .\builder\models.py:89
+#: .\shop\models.py:24
+msgid "Description"
+msgstr ""
+
+#: .\blog\models.py:19 .\shop\models.py:25
+msgid "Author"
+msgstr ""
+
+#: .\blog\models.py:20 .\builder\models.py:14 .\builder\models.py:26
+#: .\builder\models.py:102 .\shop\models.py:54
+msgid "Category"
+msgstr ""
+
+#: .\blog\models.py:21 .\builder\models.py:17 .\builder\models.py:25
+#: .\builder\models.py:92 .\builder\models.py:188 .\builder\models.py:228
+#: .\builder\models.py:238 .\builder\models.py:248 .\builder\models.py:258
+msgid "Template"
+msgstr ""
+
+#: .\blog\models.py:23 .\builder\models.py:91 .\shop\models.py:28
+msgid "Intro"
+msgstr ""
+
+#: .\blog\models.py:24 .\builder\models.py:226 .\builder\models.py:231
+#: .\shop\models.py:49 .\shop\models.py:50 .\shop\models.py:51
+#: .\shop\models.py:52 .\shop\models.py:53
+msgid "Text"
+msgstr ""
+
+#: .\blog\models.py:25 .\builder\models.py:24 .\builder\models.py:286
+#: .\coupons\models.py:11 .\shop\models.py:55
+msgid "Status"
+msgstr ""
+
+#: .\blog\models.py:26 .\builder\models.py:278
+msgid "Tag"
+msgstr ""
+
+#: .\blog\models.py:27 .\shop\models.py:61
+msgid "Published"
+msgstr ""
+
+#: .\blog\models.py:28
+msgid "Date publish"
+msgstr ""
+
+#: .\blog\models.py:29 .\blog\models.py:58 .\builder\models.py:32
+#: .\builder\models.py:95 .\builder\models.py:268 .\orders\models.py:15
+#: .\shop\models.py:63 .\shop\models.py:87 .\shop\models.py:101
+#: .\shop\models.py:116
+msgid "Created"
+msgstr ""
+
+#: .\blog\models.py:30 .\blog\models.py:59 .\builder\models.py:33
+#: .\builder\models.py:96 .\builder\models.py:269 .\orders\models.py:16
+#: .\shop\models.py:64 .\shop\models.py:88 .\shop\models.py:102
+#: .\shop\models.py:117
+msgid "Updated"
+msgstr ""
+
+#: .\blog\models.py:38 .\blog\models.py:54 .\builder\models.py:15
+#: .\builder\models.py:27 .\builder\models.py:172
+msgid "Article"
+msgstr ""
+
+#: .\blog\models.py:39
+msgid "Articles"
+msgstr ""
+
+#: .\blog\models.py:57 .\blog\models.py:63
+msgid "Comment"
+msgstr ""
+
+#: .\blog\models.py:60
+msgid "Active"
+msgstr ""
+
+#: .\builder\admin.py:361
+msgid "Create a new language pack"
+msgstr ""
+
+#: .\builder\apps.py:8
+msgid "Site structure"
+msgstr ""
+
+#: .\builder\models.py:16 .\builder\models.py:28 .\builder\models.py:174
+#: .\orders\models.py:36 .\shop\models.py:79
+msgid "Product"
+msgstr ""
+
+#: .\builder\models.py:20
+msgid "Parent category"
+msgstr ""
+
+#: .\builder\models.py:29
+msgid "Link url"
+msgstr ""
+
+#: .\builder\models.py:30
+msgid "Ico"
+msgstr ""
+
+#: .\builder\models.py:31
+msgid "Default pages"
+msgstr ""
+
+#: .\builder\models.py:36 .\builder\models.py:37
+msgid "Menu"
+msgstr ""
+
+#: .\builder\models.py:83 .\builder\models.py:173 .\shop\apps.py:7
+msgid "Shop"
+msgstr ""
+
+#: .\builder\models.py:85 .\builder\models.py:181
+msgid "Type"
+msgstr ""
+
+#: .\builder\models.py:86 .\shop\models.py:114
+msgid "Parent"
+msgstr ""
+
+#: .\builder\models.py:90 .\builder\models.py:246 .\builder\models.py:251
+#: .\shop\models.py:39 .\shop\models.py:40 .\shop\models.py:41
+#: .\shop\models.py:42 .\shop\models.py:43
+msgid "Image"
+msgstr ""
+
+#: .\builder\models.py:93 .\builder\models.py:279
+msgid "Tags"
+msgstr ""
+
+#: .\builder\models.py:94
+msgid "Lorems article"
+msgstr ""
+
+#: .\builder\models.py:103
+msgid "Categories"
+msgstr ""
+
+#: .\builder\models.py:149 .\builder\models.py:184
+msgid "File"
+msgstr ""
+
+#: .\builder\models.py:152 .\builder\models.py:179
+msgid "Theme"
+msgstr ""
+
+#: .\builder\models.py:153
+msgid "Themes"
+msgstr ""
+
+#: .\builder\models.py:170
+msgid "Page"
+msgstr ""
+
+#: .\builder\models.py:175
+msgid "Block"
+msgstr ""
+
+#: .\builder\models.py:176 .\builder\models.py:185
+msgid "Default"
+msgstr ""
+
+#: .\builder\models.py:177
+msgid "Error 404"
+msgstr ""
+
+#: .\builder\models.py:182 .\builder\models.py:236
+msgid "Html"
+msgstr ""
+
+#: .\builder\models.py:189
+msgid "Templates"
+msgstr ""
+
+#: .\builder\models.py:232
+msgid "Texts"
+msgstr ""
+
+#: .\builder\models.py:262
+msgid "Links"
+msgstr ""
+
+#: .\builder\models.py:284 .\coupons\models.py:7 .\shop\models.py:26
+msgid "Code"
+msgstr ""
+
+#: .\builder\models.py:285
+msgid "Country"
+msgstr ""
+
+#: .\builder\models.py:292
+msgid "Language"
+msgstr ""
+
+#: .\builder\models.py:293
+msgid "Languages"
+msgstr ""
+
+#: .\cart\apps.py:8
+msgid "Cart"
+msgstr ""
+
+#: .\coupons\apps.py:8
+msgid "Sale"
+msgstr ""
+
+#: .\coupons\models.py:8
+msgid "Date now"
+msgstr ""
+
+#: .\coupons\models.py:9
+msgid "Date end"
+msgstr ""
+
+#: .\coupons\models.py:10 .\orders\models.py:19
+msgid "Discount"
+msgstr ""
+
+#: .\coupons\models.py:14 .\orders\models.py:18
+msgid "Coupon"
+msgstr ""
+
+#: .\coupons\models.py:15
+msgid "Coupons"
+msgstr ""
+
+#: .\orders\apps.py:8 .\orders\models.py:24
+msgid "Orders"
+msgstr ""
+
+#: .\orders\models.py:10
+msgid "Firstname"
+msgstr ""
+
+#: .\orders\models.py:11
+msgid "Lastname"
+msgstr ""
+
+#: .\orders\models.py:12
+msgid "Email"
+msgstr ""
+
+#: .\orders\models.py:13
+msgid "Address"
+msgstr ""
+
+#: .\orders\models.py:14
+msgid "City"
+msgstr ""
+
+#: .\orders\models.py:17
+msgid "Paid"
+msgstr ""
+
+#: .\orders\models.py:23 .\orders\models.py:35
+msgid "Order"
+msgstr ""
+
+#: .\orders\models.py:37 .\shop\models.py:56
+msgid "Price"
+msgstr ""
+
+#: .\orders\models.py:38 .\shop\models.py:59
+msgid "Quantity"
+msgstr ""
+
+#: .\shop\models.py:14
+msgid "standard"
+msgstr ""
+
+#: .\shop\models.py:27
+msgid "Available"
+msgstr ""
+
+#: .\shop\models.py:29
+msgid "Param name №1"
+msgstr ""
+
+#: .\shop\models.py:30
+msgid "Param name №2"
+msgstr ""
+
+#: .\shop\models.py:31
+msgid "Param name №3"
+msgstr ""
+
+#: .\shop\models.py:32
+msgid "Param name №4"
+msgstr ""
+
+#: .\shop\models.py:33
+msgid "Param name №5"
+msgstr ""
+
+#: .\shop\models.py:34
+msgid "Param text №1"
+msgstr ""
+
+#: .\shop\models.py:35
+msgid "Param text №2"
+msgstr ""
+
+#: .\shop\models.py:36
+msgid "Param text №3"
+msgstr ""
+
+#: .\shop\models.py:37
+msgid "Param text №4"
+msgstr ""
+
+#: .\shop\models.py:38
+msgid "Param text №5"
+msgstr ""
+
+#: .\shop\models.py:44 .\shop\models.py:45 .\shop\models.py:46
+#: .\shop\models.py:47 .\shop\models.py:48
+msgid "Video"
+msgstr ""
+
+#: .\shop\models.py:57
+msgid "Stock"
+msgstr ""
+
+#: .\shop\models.py:58
+msgid "Currency"
+msgstr ""
+
+#: .\shop\models.py:60 .\shop\models.py:123
+msgid "Filter"
+msgstr ""
+
+#: .\shop\models.py:62
+msgid "Publish"
+msgstr ""
+
+#: .\shop\models.py:80
+msgid "Products"
+msgstr ""
+
+#: .\shop\models.py:85
+msgid "Delivery"
+msgstr ""
+
+#: .\shop\models.py:86
+msgid "Payment"
+msgstr ""
+
+#: .\shop\models.py:91
+msgid "Условия доставки и оплаты"
+msgstr ""
+
+#: .\shop\models.py:94 .\shop\models.py:95
+msgid "Условия"
+msgstr ""
+
+#: .\shop\models.py:108 .\shop\models.py:109
+msgid "Filter name"
+msgstr ""
+
+#: .\shop\models.py:124
+msgid "Filters"
+msgstr ""
+
+#: .\shop\views.py:19
+msgid "All products"
+msgstr ""

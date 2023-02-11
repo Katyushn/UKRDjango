@@ -1,0 +1,456 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %} <!DOCTYPE html><html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="{{ description }}" name="description"/>
+  <meta content="" name="author"/>
+  <title>
+   {{ title }}
+  </title>
+  <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <link href="{% static '/multicolor/images/ico/favicon.ico' %}" rel="shortcut icon"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-144-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-114-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-72-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-57-precomposed.png' %}" rel="apple-touch-icon-precomposed"/>
+  <meta content="{{ title }}" property="og:title"/>
+  <meta content="{{ description }}" property="og:description"/>
+  <meta content="blog" property="og:type"/>
+  <meta content="{{request.path}}" property="og:url"/>
+  <meta content="{{ category.img }}" property="og:image"/>
+  {% compress css %}
+  <link href="{% static '/multicolor/css/bootstrap.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/font-awesome.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/lightbox.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/animate.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/main.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/responsive.css' %}" rel="stylesheet"/>
+  {% endcompress %}
+ </head>
+ <!--/head-->
+ <body>
+  {% include 'header.html' %}
+  <!--/#header-->
+  <section id="page-breadcrumb">
+   <div class="vertical-center sun">
+    <div class="container">
+     <div class="row">
+      <div class="action">
+       <div class="col-sm-12">
+        <h1 class="title" data-django="title">
+         {{ title }}
+        </h1>
+        <p data-django="breadcrumbs-page">
+         <span><a href="/">{{ txt_home_649.text }}</a> / {{ title }}</span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#page-breadcrumb-->
+  <section class="padding wow fadeIn" data-wow-delay="300ms" data-wow-duration="1000ms" id="company-information">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-6">
+      <img alt="" class="img-responsive" src="{{ img_imagesaboutus1_649.img.url }}"/>
+     </div>
+     <div class="col-sm-6 padding-top" data-django="html">
+      {{ html_b6a7883413d0d1caea8c090081f9e77b_649.html | safe }}
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="services">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="300ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="300ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon1_649.img.url }}"/>
+       </div>
+       <h2>
+        {{ txt_00632970e2452bdb097154a5f6a8ab33_649.text }}
+       </h2>
+       <p data-django="html">
+        {{ html_d41d8cd98f00b204e9800998ecf8427e_649.html | safe }}
+       </p>
+      </div>
+     </div>
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="600ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="600ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon2_649.img.url }}"/>
+       </div>
+       <h2>
+        {{ txt_4e2962b0275652a548d92014310dbe49_649.text }}
+       </h2>
+       <p data-django="html">
+        {{ html_d41d8cd98f00b204e9800998ecf8427e_649.html | safe }}
+       </p>
+      </div>
+     </div>
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="900ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="900ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon3_649.img.url }}"/>
+       </div>
+       <h2>
+        {{ txt_2b2c5a09c4ce83f206164bb26b038059_649.text }}
+       </h2>
+       <p data-django="html">
+        {{ html_d41d8cd98f00b204e9800998ecf8427e_649.html | safe }}
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#services-->
+  <section class="responsive" id="action">
+   <div class="vertical-center">
+    <div class="container">
+     <div class="row">
+      <div class="action take-tour">
+       <div class="col-sm-7 wow fadeInLeft" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+        {{ html_c7a7d5e6958c7b4788c00f0b29bfb5c3_649.html | safe }}
+       </div>
+       <div class="col-sm-5 text-center wow fadeInRight" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+        {{ html_303aa993815d49fa0d7d5dcb24860572_649.html | safe }}
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#action-->
+  <section id="team">
+   <div class="container">
+    <div class="row">
+     <h1 class="title text-center wow fadeInDown" data-wow-delay="300ms" data-wow-duration="500ms">
+      {{ txt_4fcb70528a4da3b09631a574fd972482_649.text }}
+     </h1>
+     <p class="text-center wow fadeInDown" data-wow-delay="400ms" data-wow-duration="400ms">
+      {{ txt_e2bebae2ef726e40a86bf3f82e51f8fa_649.text }}
+      <br/>
+      {{ txt_d7620b400c5e9d24f54928bd9d20770e_649.text }}
+     </p>
+     <div class="carousel slide wow fadeIn" data-ride="carousel" data-wow-delay="400ms" data-wow-duration="400ms" id="team-carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators visible-xs">
+       <li class="active" data-slide-to="0" data-target="#team-carousel">
+       </li>
+       <li data-slide-to="1" data-target="#team-carousel">
+       </li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+       <div class="item active">
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus1_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus2_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus3_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus1_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="item">
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus4_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus3_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus2_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+         <div class="team-single-wrapper">
+          <div class="team-single">
+           <div class="person-thumb">
+            <img alt="" class="img-responsive" src="{{ img_imagesaboutus1_649.img.url }}"/>
+           </div>
+           <div class="social-profile">
+            <ul class="nav nav-pills">
+             <li>
+              <a data-django-link="facebook" href="{{ link_facebook_649.link }}">
+               <i class="fa fa-facebook">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="twitter" href="{{ link_twitter_649.link }}">
+               <i class="fa fa-twitter">
+               </i>
+              </a>
+             </li>
+             <li>
+              <a data-django-link="google" href="{{ link_google_649.link }}">
+               <i class="fa fa-google-plus">
+               </i>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="person-info" data-django="html">
+           {{ html_9b13612ffbfdc186a85b654db7f0a6be_649.html | safe }}
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- Controls -->
+      <a class="{{ txt_811882fecd5c7618d7099ebbd39ea254_649.text }} team-carousel-control hidden-xs" data-slide="prev" href="#team-carousel">
+       {{ txt_811882fecd5c7618d7099ebbd39ea254_649.text }}
+      </a>
+      <a class="{{ txt_7c4f29407893c334a6cb7a87bf045c0d_649.text }} team-carousel-control hidden-xs" data-slide="next" href="#team-carousel">
+       {{ txt_7c4f29407893c334a6cb7a87bf045c0d_649.text }}
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#team-->
+  {% include 'footer.html' %}
+  <!--/#footer-->
+  {% compress js %}
+  <script src="{% static '/multicolor/js/jquery.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/bootstrap.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/lightbox.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/wow.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/main.js' %}" type="text/javascript">
+  </script>
+  {% endcompress %}
+ </body>
+</html>

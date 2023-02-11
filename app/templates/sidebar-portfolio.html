@@ -1,0 +1,48 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %}<div class="col-md-3 col-sm-4 padding-top">
+ <div class="sidebar portfolio-sidebar">
+  <div class="sidebar-item categories">
+   <h3>
+    {{ txt_cb82de9188ee75dda6407885b471e5e4_645.text }}
+   </h3>
+   <ul class="nav navbar-stacked" data-django-category="portfolio">
+    {% recursetree category_portfolio %}
+    <li>
+     <a class="{% if node.id == category.id %} activ {% endif %}" href="{{ node.get_absolute_url }}">
+      {{ node.title }}
+     </a>
+     {% if not node.is_leaf_node %}
+     <ul>
+      {{ children }}
+     </ul>
+     {% endif %}
+    </li>
+    {% endrecursetree %}
+   </ul>
+  </div>
+  <div class="sidebar-item popular">
+   <h3>
+    {{ txt_63a22c1f6c5bc155a4f5d1e19055ada4_645.text }}
+   </h3>
+   <div class="gallery" data-django="sidebar-top-article">
+    {% for item in top_post %}
+    <a href="{{ item.get_absolute_url }}">
+     <div style="display: flex; align-items:center;">
+      <div style="width:30%;">
+       <img alt="" src="{{ item.img.url }}" style="width: 100%; "/>
+      </div>
+      <div style="width:70%; padding-left:15px;">
+       <div style="color: #000; font-size: 14px;">
+        {{ item.created }}
+       </div>
+       <h6>
+        {{ item.title }}
+       </h6>
+      </div>
+     </div>
+    </a>
+    <hr/>
+    {% endfor %}
+   </div>
+  </div>
+ </div>
+</div>

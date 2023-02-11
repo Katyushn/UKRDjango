@@ -1,0 +1,76 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %}<footer id="footer">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12 text-center bottom-separator">
+    <img alt="" class="img-responsive inline" src="{{ img_imageshomeunder_637.img.url }}"/>
+   </div>
+   <div class="col-md-4 col-sm-6">
+    <div class="testimonial bottom">
+     <h2>
+      {{ txt_5289f1a930358cba4623a7234db5c71e_637.text }}
+     </h2>
+     <div class="media">
+      <div class="pull-left">
+       <a href="#">
+        <img alt="" src="{{ img_imageshomeprofile1_637.img.url }}"/>
+       </a>
+      </div>
+      <div class="media-body" data-django="html">
+       {{ html_f6608fdb7f2a20f443a0d1ee04f3500d_637.html | safe }}
+      </div>
+     </div>
+     <div class="media">
+      <div class="pull-left">
+       <a href="#">
+        <img alt="" src="{{ img_imageshomeprofile2_637.img.url }}"/>
+       </a>
+      </div>
+      <div class="media-body" data-django="html">
+       {{ html_a1d9a723506cfabcec41c2e92b25b66a_637.html | safe }}
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-3 col-sm-6">
+    <div class="contact-info bottom" data-django="html">
+     {{ html_9aad473893fe6b309f90e96dbfe463d4_637.html | safe }}
+    </div>
+   </div>
+   <div class="col-md-4 col-sm-12">
+    <div class="contact-form bottom">
+     <h2>
+      {{ txt_cc5fd9b9f1cad59fcff97a1f21f34304_637.text }}
+     </h2>
+     <form action="{% url 'account:message' %}" data-django="form-message" id="" method="post" name="contact-form">
+      <div class="form-group">
+       <input class="form-control" name="name" placeholder="Name" required="required" type="text"/>
+      </div>
+      <div class="form-group">
+       <input class="form-control" name="email" placeholder="Email Id" required="required" type="email"/>
+      </div>
+      <div class="form-group">
+       <textarea class="form-control" id="message" name="message" placeholder="Your text here" required="required" rows="8"></textarea>
+      </div>
+      <div class="form-group">
+       <input class="btn btn-submit" name="submit" type="submit" value="Submit"/>
+      </div>
+      {% csrf_token %}
+     </form>
+    </div>
+   </div>
+   <div class="col-sm-12">
+    <div class="copyright-text text-center">
+     <p>
+      {{ txt_feac27e20a693a5e42bf0440b245522a_637.text }}
+     </p>
+     <p>
+      {{ txt_dc497d4b6c842b4a50ada43fbd12c2ce_637.text }}
+      <a data-django-link="home" href="{{ link_home_637.link }}" target="_blank">
+       {{ txt_5a91182c3fe5b4628c5efaca7ca4de23_637.text }}
+      </a>
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
+</footer>

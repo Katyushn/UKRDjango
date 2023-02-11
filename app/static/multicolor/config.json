@@ -1,0 +1,431 @@
+{
+  "post": 2,
+  "template": [
+    {
+      "type": "default",
+      "title": "Default",
+      "file": "default.html"
+    },
+    {
+      "type": "blog",
+      "title": "Blog default",
+      "file": "blog.html"
+    },
+    {
+      "type": "blog",
+      "title": "Blog two",
+      "file": "blog-two.html"
+    },
+    {
+      "type": "blog",
+      "title": "Blog three",
+      "file": "blog-three.html"
+    },
+    {
+      "type": "blog",
+      "title": "Blog four",
+      "file": "blog-four.html"
+    },
+    {
+      "type": "blog",
+      "title": "Portfolio",
+      "file": "portfolio.html"
+    },
+    {
+      "type": "blog",
+      "title": "Portfolio two",
+      "file": "portfolio-two.html"
+    },
+    {
+      "type": "blog",
+      "title": "Portfolio three",
+      "file": "portfolio-three.html"
+    },
+    {
+      "type": "article",
+      "title": "Article default",
+      "file": "blog-details.html"
+    },
+    {
+      "type": "article",
+      "title": "Portfolio details",
+      "file": "portfolio-details.html"
+    },
+    {
+      "type": "page",
+      "title": "About one",
+      "file": "aboutus.html"
+    },
+    {
+      "type": "page",
+      "title": "About two",
+      "file": "aboutus2.html"
+    },
+    {
+      "type": "page",
+      "title": "Coming soon",
+      "file": "coming-soon.html"
+    },
+    {
+      "type": "page",
+      "title": "Contact one",
+      "file": "contact.html"
+    },
+    {
+      "type": "page",
+      "title": "Contact two",
+      "file": "contact2.html"
+    },
+    {
+      "type": "page",
+      "title": "Home",
+      "file": "index.html"
+    },
+    {
+      "type": "page",
+      "title": "Pricing",
+      "file": "pricing.html"
+    },
+    {
+      "type": "page",
+      "title": "Services",
+      "file": "service.html"
+    },
+    {
+      "type": "page",
+      "title": "Shortcodes",
+      "file": "shortcodes.html"
+    },
+    {
+      "type": "404",
+      "title": "404 default",
+      "file": "404.html"
+    }
+  ],
+  "category": [
+    {
+      "type": "blog",
+      "title": "Blog",
+      "template": "Blog default",
+      "lorem": 5,
+      "subcategory": [
+        {
+          "type": "blog",
+          "title": "Blog Default",
+          "template": "Blog default",
+          "lorem": 5,
+          "subcategory": []
+        },
+        {
+          "type": "blog",
+          "title": "2 Columns + Right Sidebar",
+          "template": "Blog two",
+          "lorem": 5,
+          "subcategory": []
+        },
+        {
+          "type": "blog",
+          "title": "1 Column + Left Sidebar",
+          "template": "Blog three",
+          "lorem": 5,
+          "subcategory": []
+        },
+        {
+          "type": "blog",
+          "title": "Blog Masonary",
+          "template": "Blog four",
+          "lorem": 5,
+          "subcategory": []
+        }
+      ]
+    },
+    {
+      "type": "blog",
+      "title": "Portfolio",
+      "template": "Portfolio",
+      "lorem": 5,
+      "subcategory": [
+        {
+          "type": "blog",
+          "title": "Portfolio one",
+          "template": "Portfolio",
+          "lorem": 5,
+          "subcategory": []
+        },
+        {
+          "type": "blog",
+          "title": "Portfolio two",
+          "template": "Portfolio two",
+          "lorem": 5,
+          "subcategory": []
+        },
+        {
+          "type": "blog",
+          "title": "Portfolio three",
+          "template": "Portfolio three",
+          "lorem": 5,
+          "subcategory": []
+        }
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "title": "header",
+      "type": "link",
+      "link": "javascript:void(0);",
+      "template": "",
+      "category": "",
+      "post": "",
+      "product": "",
+      "default": 0,
+      "submenu": [
+        {
+          "title": "Home",
+          "type": "template",
+          "template": "Home",
+          "link": "",
+          "category": "",
+          "post": "",
+          "product": "",
+          "default": 1,
+          "submenu": {}
+        },
+        {
+          "title": "Pages",
+          "type": "link",
+          "link": "javascript:void(0);",
+          "template": "",
+          "category": "",
+          "post": "",
+          "product": "",
+          "default": 0,
+          "submenu": [
+            {
+              "title": "About",
+              "type": "template",
+              "link": "",
+              "template": "About one",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "About 2",
+              "type": "template",
+              "link": "",
+              "template": "About two",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Services",
+              "type": "template",
+              "link": "",
+              "template": "Services",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Pricing",
+              "type": "template",
+              "link": "",
+              "template": "Pricing",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Contact us",
+              "type": "template",
+              "link": "",
+              "template": "Contact one",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Contact us 2",
+              "type": "template",
+              "link": "",
+              "template": "Contact two",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "404 error",
+              "type": "template",
+              "link": "",
+              "template": "404 default",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Coming Soon",
+              "type": "template",
+              "link": "",
+              "template": "Coming soon",
+              "category": "",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            }
+          ]
+        },
+        {
+          "title": "Blog",
+          "type": "link",
+          "link": "javascript:void(0);",
+          "template": "",
+          "category": "",
+          "post": "",
+          "product": "",
+          "default": 0,
+          "submenu": [
+            {
+              "title": "Blog Default",
+              "type": "category",
+              "link": "",
+              "template": "",
+              "category": "Blog Default",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "2 Columns + Right Sidebar",
+              "type": "category",
+              "link": "",
+              "template": "",
+              "category": "2 Columns + Right Sidebar",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "1 Column + Left Sidebar",
+              "type": "category",
+              "link": "",
+              "template": "",
+              "category": "1 Column + Left Sidebar",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Blog Masonary",
+              "type": "category",
+              "link": "",
+              "template": "",
+              "category": "Blog Masonary",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Blog Details",
+              "type": "article",
+              "link": "",
+              "template": "",
+              "category": "",
+              "post": 1,
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            }
+          ]
+        },
+        {
+          "title": "Portfolio",
+          "type": "link",
+          "link": "javascript:void(0);",
+          "template": "",
+          "category": "",
+          "post": "",
+          "product": "",
+          "default": 0,
+          "submenu": [
+            {
+              "title": "Portfolio Default",
+              "type": "category",
+              "link": "",
+              "template": "",
+              "category": "Portfolio one",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Isotope 3 Columns + Right Sidebar",
+              "type": "category",
+              "link": "",
+              "template": "",
+              "category": "Portfolio two",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "2 Columns",
+              "type": "category",
+              "link": "",
+              "template": "",
+              "category": "Portfolio three",
+              "post": "",
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            },
+            {
+              "title": "Portfolio Details",
+              "type": "article",
+              "link": "",
+              "template": "",
+              "category": "",
+              "post": 1,
+              "product": "",
+              "default": 0,
+              "submenu": {}
+            }
+          ]
+        },
+        {
+          "title": "Shortcodes",
+          "type": "template",
+          "template": "Shortcodes",
+          "link": "",
+          "category": "",
+          "post": "",
+          "product": "",
+          "default": 0,
+          "submenu": {}
+        }
+      ]
+    }
+  ]
+}

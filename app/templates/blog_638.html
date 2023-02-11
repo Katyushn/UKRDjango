@@ -1,0 +1,199 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %} <!DOCTYPE html><html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="{{ description }}" name="description"/>
+  <meta content="" name="author"/>
+  <title data-django="title">
+   {{ title }}
+  </title>
+  <link href="{% static '/multicolor/images/ico/favicon.ico' %}" rel="shortcut icon"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-144-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-114-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-72-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-57-precomposed.png' %}" rel="apple-touch-icon-precomposed"/>
+  <meta content="{{ title }}" property="og:title"/>
+  <meta content="{{ description }}" property="og:description"/>
+  <meta content="blog" property="og:type"/>
+  <meta content="{{request.path}}" property="og:url"/>
+  <meta content="{{ category.img }}" property="og:image"/>
+  {% compress css %}
+  <link href="{% static '/multicolor/css/bootstrap.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/font-awesome.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/lightbox.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/animate.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/main.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/responsive.css' %}" rel="stylesheet"/>
+  {% endcompress %}
+ </head>
+ <body>
+  {% include 'header.html' %}
+  <!--/#header-->
+  <section id="page-breadcrumb">
+   <div class="vertical-center sun">
+    <div class="container">
+     <div class="row">
+      <div class="action">
+       <div class="col-sm-12">
+        <h1 class="title" data-django="title">
+         {{ title }}
+        </h1>
+        <p data-django="breadcrumbs-category">
+         <span>{{ txt_home_638.text }} / {% if category.parent != None %}<a href="{{ category.parent.get_absolute_url }}">{{ category.parent.title }}</a> / <a href="{{ category.get_absolute_url }}">{{ category.title }}</a>{% else %}{{ category.title }}{% endif %}</span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#page-breadcrumb-->
+  <section>
+   <div data-django="messages">
+    {% if messages %}
+                            {% for message in messages %}
+                                {% if message.tags == 'error' %}
+    <div class="container" style="margin-top: 1rem;color: #721c24;background-color: #f8d7da;position: relative;padding: 0.75rem 1.25rem;margin-bottom: 1rem;border: #f5c6cb 1px solid;border-radius: 0.25rem;">
+     {{ message }}
+    </div>
+    {% else %}
+    <div class="container" style="margin-top: 1rem;color: #155724;background-color: #d4edda;position: relative;padding: 0.75rem 1.25rem;margin-bottom: 1rem;border: #c3e6cb 1px solid;border-radius: 0.25rem;">
+     {{ message }}
+    </div>
+    {% endif %}
+                            {% endfor %}
+                        {% endif %}
+   </div>
+  </section>
+  <section class="padding-top" id="blog">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-9 col-sm-7">
+      <div class="row" data-django="blog">
+       {% for item in posts %}
+       <div class="col-sm-12 col-md-12">
+        <div class="single-blog single-column">
+         <div class="post-thumb">
+          <a href="{{ item.get_absolute_url }}">
+           {% if item.img is not None %}
+           <img alt="" class="img-responsive" src="{{ item.img.url }}"/>
+           {% endif %}
+          </a>
+          <div class="post-overlay">
+           <span class="uppercase">
+            <a data-django="blog-article-date" style="font-size: 16px" href="{{ item.get_absolute_url }}">
+             {{ item.created|date:"Y F" }}
+            </a>
+           </span>
+          </div>
+         </div>
+         <div class="post-content overflow">
+          <h2 class="post-title bold" data-django="blog-article-title">
+           <a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
+          </h2>
+          <h3 class="post-author" data-django="blog-article-author">
+           {{ item.author.username }}
+          </h3>
+          <p data-django="blog-article-intro">
+           {{ item.intro }}
+          </p>
+          <a class="read-more" href="{{ item.get_absolute_url }}">
+           {{ txt_b869993b9e9305a5028b33ee8b221dd4_638.text }}
+          </a>
+          <div class="post-bottom overflow">
+           <ul class="nav navbar-nav post-nav">
+            <li data-django="blog-article-tag">
+             <i class="fa fa-tag">
+             </i>
+             {% for tag in item.tags.all %} <a href="{{ tag.get_absolute_url }}" style="display:inline;">{{ tag.title }}</a> {% endfor %}
+            </li>
+            <li data-django="blog-article-comment">
+             <i class="fa fa-comments">
+             </i>
+             {{ item.comment_set.count }}
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+       {% endfor %}
+      </div>
+      <div class="blog-pagination" data-django="pagination">
+       {% if is_paginated %}
+       <ul class="pagination">
+        {% if page_obj.has_previous %}
+        <li>
+         <a href="?page={{ page_obj.previous_page_number }}">
+          «
+         </a>
+        </li>
+        {% else %}
+        <li class="disabled">
+         <a href="javascript:void(0);">
+          <span>
+           «
+          </span>
+         </a>
+        </li>
+        {% endif %}
+                            {% for i in paginator.page_range %}
+                                {% if page_obj.number == i %}
+        <li class="active">
+         <a href="javascript:void(0);">
+          <span>
+           {{ i }}
+           <span class="sr-only">
+            {{ txt_c2e8e070ce89b6ac25f9156e8a31278a_638.text }}
+           </span>
+          </span>
+         </a>
+        </li>
+        {% else %}
+        <li>
+         <a href="?page={{ i }}">
+          {{ i }}
+         </a>
+        </li>
+        {% endif %}
+                            {% endfor %}
+                            {% if page_obj.has_next %}
+        <li>
+         <a href="?page={{ page_obj.next_page_number }}">
+          »
+         </a>
+        </li>
+        {% else %}
+        <li class="disabled">
+         <a href="javascript:void(0);">
+          <span>
+           »
+          </span>
+         </a>
+        </li>
+        {% endif %}
+       </ul>
+       {% endif %}
+      </div>
+     </div>
+     {% include 'sidebar.html' %}
+    </div>
+   </div>
+  </section>
+  <!--/#blog-->
+  {% include 'footer.html' %}
+  <!--/#footer-->
+  {% compress js %}
+  <script src="{% static '/multicolor/js/jquery.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/bootstrap.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/lightbox.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/wow.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/main.js' %}" type="text/javascript">
+  </script>
+  {% endcompress %}
+ </body>
+</html>
