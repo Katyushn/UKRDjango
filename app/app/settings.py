@@ -259,16 +259,16 @@ MPTT_ADMIN_LEVEL_INDENT = 40
 
 # email settings
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'katyushn@gmail.com'
-EMAIL_HOST_PASSWORD = 'jbmpygvhsoszcubu'
+EMAIL_HOST_USER = 'admin@gmail.com'
+EMAIL_HOST_PASSWORD = '???????????????????????????'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # для отладки - блокирует отпраку почты и выводит сообщение в консоль
 
 # social Auth
 # GOOGLE
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '73948695753-2l7nutdle2u758g492erb964jlbk2cci.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '???????????????????????????'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '???????????????????????????'
 # LOGIN_URL = '/auth/login/google-oauth2/'
 LOGIN_URL = '/account/'
 LOGIN_REDIRECT_URL = '/account/'
@@ -440,4 +440,8 @@ JAZZMIN_SETTINGS = {
     "language_chooser": True,
 }
 
-LANGUAGES = (('en', _('English')), ('ru', _('Russian')), ('uk', _('Ukrainian')), )LANGUAGES = (('en', _('English')), ('af', _('Afrikaans')), ('ar', _('Arabic')), )LANGUAGES = (('en', _('English')), ('ru', _('Russian')), ('uk', _('Ukrainian')), )LANGUAGES = (('en', _('English')), ('uk', _('Ukrainian')), )
+
+LANGUAGES = (('en', _('English')), ('ru', _('Russian')), ('uk', _('Ukrainian')), )
+LANGUAGES = (('en', _('English')), ('af', _('Afrikaans')), ('ar', _('Arabic')), )
+LANGUAGES = (('en', _('English')), ('ru', _('Russian')), ('uk', _('Ukrainian')), )
+LANGUAGES = (('en', _('English')), ('uk', _('Ukrainian')), )
