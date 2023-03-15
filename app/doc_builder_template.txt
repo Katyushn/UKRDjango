@@ -1,0 +1,110 @@
+BUILDER TEMPLET
+
+    ! css background-image transfer from css to html
+
+    INSERT an ATTRIBUTE into the HTML TAG
+
+        Change the name:
+
+            ! data-django-block="name" - блок который создает отдельный шаблон кода
+            ! data-django-link="name" - помещаеться в тег а где будет заменена ссылка по имени
+            ! data-django-new-menu="name" - создает дерево меню в админпанели / помещается в родительский ul
+            ! data-django-menu="name" - помещается в родительский ul
+
+            ! data-django-new-category-blog="name" - создает дерево категорий в админпанели / помещается в родительский ul
+            ! data-django-new-category-shop="name" - создает дерево категорий в админпанели / помещается в родительский ul
+            ! data-django-category="name" - помещается в родительский ul
+
+        Default the name:
+
+            ! data-django="title" - блок с текстом заголовка
+            ! data-django="messages" - пустой tag для вставки туда всплывающих сообщений
+            ! data-django="language" - родительский tag для преобразования блока выбора языков, или ul или любой другой блочній єлемент типо div
+            ! data-django="login" - родительский tag для преобразования блока авторизации
+
+            ! data-django="cart-link" - блок а (ссылка на корзину)
+            ! data-django="cart-item" - блок с количеством товаров в корзине (span...)
+            ! data-django="cart-price" - блок с общей стоимостью всех товаров в корзине (span...)
+            ! data-django="cart-wishes-link" - блок а (ссылка на избранные товары)
+            ! data-django="cart-wishes-item" - блок с количеством товаров в избранных (span...)
+
+            ! data-django="blog-search" - блок form с формой поиска по блогу
+            ! data-django="shop-search" - блок form с формой поиска по магазину
+
+            ! data-django="breadcrumbs-category" - блок c хлебными крошками для блога
+            ! data-django="breadcrumbs-default" - блок c хлебными крошками для универсального шаблона
+            ! data-django="breadcrumbs-page" - блок c хлебными крошками
+            ! data-django="breadcrumbs-article" - блок c хлебными крошками
+            ! data-django="breadcrumbs-product" - блок c хлебными крошками ?????????????????????????
+
+            ! data-django="pagination" - блок <div> или <p> c пагинацией
+            ! data-django="html" - блок с произвольным html
+
+            ! data-django="form-subscribe" - блок form с формой подписки на email
+
+            ! data-django="form-message" - блок form с формой обратной связи
+
+            ! data-django="sidebar-tag" - блок <div>, <p>, <ul> c тегами для блога (обязательно внутри теги а)
+            ! data-django="sidebar-top-article" - любой тег - модуль с избранными статьями
+            ! data-django="sidebar-recent-comments" - любой тег - модуль з останніми коментарями
+
+            ! data-django="blog" - блок (class="row") со статьями
+            ! data-django="blog-article-date" - перший дитячій блок з датою публікації
+            ! data-django="blog-article-author" - перший дитячій блок c автором
+            ! data-django="blog-article-comment" - перший дитячій блок c колличеством комментариев
+            ! data-django="blog-article-tag" - перший дитячій блок c вступительным текстом
+            ! data-django="blog-article-title" - перший дитячій блок c заголовком статьи
+            ! data-django="blog-article-intro" - перший дитячій блок c вступительным текстом
+
+            ! data-django="article-img" - перший дитячій блок із зображенням
+            ! data-django="article-title" - перший дитячій блок c заголовком статьи
+            ! data-django="article-body" - блок c основним текстом
+            ! data-django="article-date" - перший дитячій блок з датою публікації
+            ! data-django="article-author" - перший дитячій блок c автором
+            ! data-django="article-comment" - перший дитячій блок c колличеством комментариев
+            ! data-django="article-tag" - перший дитячій блок c вступительным текстом
+
+            ! data-django="form-comments-title" перший дитячій блок із заголовком
+            ! data-django="form-comments" батьківський блок із списком коментарів
+            ! data-django="form-comments-author" перший дитячій блок з автором
+            ! data-django="form-comments-photo" перший дитячій блок з фотографією
+            ! data-django="form-comments-body" перший дитячій блок з тестом коментарів
+            ! data-django="form-comments-date" перший дитячій блок із датою
+            ! data-django="form-comments-reply" ????????????????????????? дописать возможность отвечать и второй уровень комментариев
+
+            ! data-django="main" - блок c системным контентом который подставляется в зависимости от страницы в шаблоне default
+            ! data-django="text-default" - (только для внутренних єлементов в шаблонах static/template_static) блочный или строчный элемент с текстом
+
+
+    ====================================================================================================================
+
+    !!!!!!!!!!!!
+      Перевести всю админку на инглиш
+      Сделать запуск с инсталом от виртуал енв, удалить инстал виртуаленв с кода инсталяции програмы
+      Проверить на работоспособность в разных пк
+      выгрузить в интернет
+      создать сайт с популяризацией програмы
+      Сделать видео с описанием смс
+
+    ====================================================================================================================
+
+    Реализовать механизм модулей с настройками
+    Создать раздел с модулями и разными настрояками
+    Доделать механизм для переключения языков из админки
+    Сделать js для правильного переключения языков на фронтенде
+    """
+
+    После реализации проекта блога!!!!!!!!!!
+        - Дописать билдер магазина
+        - Тоже самое сделать с товарами - рандомное наполнение
+        - Дописать builder/models get_absolute_url для page shop product...
+
+
+
+
+
+
+
+
+
+

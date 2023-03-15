@@ -1,0 +1,113 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %}<header id="header">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12 overflow">
+    <div class="social-icons pull-right padding-left" data-django="language">
+     {% get_current_language as LANGUAGE_CODE %}
+     <form action="{% url 'account:lang' %}" method="post">
+      {% csrf_token %}
+      <label style="position: relative;">
+       <select id="" name="lang" onchange="this.form.submit()" style="padding: 3px 10px;background: #eee;border: none;outline: none;display: inline-block;-webkit-appearance: none;-moz-appearance: none;appearance: none;cursor: pointer;">
+        {% get_current_language as LANGUAGE_CODE %}
+                                       {% get_available_languages as LANGUAGES %}
+                                       {% get_language_info_list for LANGUAGES as languages %}
+                                       {% for language in languages %}
+                                           {% if language.code == LANGUAGE_CODE %}
+        <option selected="" value="{{ language.code }}">
+         {{ language.name_local }}
+        </option>
+        {% else %}
+        <option value="{{ language.code }}">
+         {{ language.name_local }}
+        </option>
+        {% endif %}
+                                       {% endfor %}
+       </select>
+      </label>
+     </form>
+    </div>
+    <div class="social-icons pull-right">
+     <ul class="nav nav-pills">
+      <li>
+       <a data-django-link="facebook" href="{{ link_facebook_636.link }}">
+        <i class="fa fa-facebook">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a data-django-link="twitter" href="{{ link_twitter_636.link }}">
+        <i class="fa fa-twitter">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a data-django-link="google" href="{{ link_google_636.link }}">
+        <i class="fa fa-google-plus">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a data-django-link="dribbble" href="{{ link_dribbble_636.link }}">
+        <i class="fa fa-dribbble">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a data-django-link="linkedin" href="{{ link_linkedin_636.link }}">
+        <i class="fa fa-linkedin">
+        </i>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="navbar navbar-inverse" role="banner">
+  <div class="container">
+   <div class="navbar-header">
+    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+     <span class="sr-only">
+      {{ txt_6c7195551da0802a39b5e2bc7187df54_636.text }}
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+    </button>
+    <a class="navbar-brand" data-django-link="home" href="{{ link_home_636.link }}">
+     <h1>
+      <img alt="logo" src="{{ img_imageslogo_636.img.url }}"/>
+     </h1>
+    </a>
+   </div>
+   <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right" data-django-menu="header" data-django-new-menu="header">
+     {% recursetree menu_header %}
+     <li class="{% if node.get_absolute_url == request.path %} active {% endif %}">
+      <a class="{% if node.get_absolute_url == request.path %} active {% endif %}" href="{{ node.get_absolute_url }}">
+       {{ node.title }} {% if node.icon != None %}{{ node.icon | safe }}{% endif %}
+      </a>
+      {% if not node.is_leaf_node %}
+      <ul class="sub-menu" role="menu">
+       {{ children }}
+      </ul>
+      {% endif %}
+     </li>
+     {% endrecursetree %}
+    </ul>
+   </div>
+   <div class="search">
+    <form action='{% url "builder:blog_search" %}' data-django="blog-search" method="get" role="form">
+     <i class="fa fa-search">
+     </i>
+     <div class="field-toggle">
+      <input autocomplete="off" class="search-form" name="search" placeholder="Search" type="text"/>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</header>

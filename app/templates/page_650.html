@@ -1,0 +1,194 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %} <!DOCTYPE html><html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="{{ description }}" name="description"/>
+  <meta content="" name="author"/>
+  <title>
+   {{ title }}
+  </title>
+  <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <link href="{% static '/multicolor/images/ico/favicon.ico' %}" rel="shortcut icon"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-144-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-114-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-72-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-57-precomposed.png' %}" rel="apple-touch-icon-precomposed"/>
+  <meta content="{{ title }}" property="og:title"/>
+  <meta content="{{ description }}" property="og:description"/>
+  <meta content="blog" property="og:type"/>
+  <meta content="{{request.path}}" property="og:url"/>
+  <meta content="{{ category.img }}" property="og:image"/>
+  {% compress css %}
+  <link href="{% static '/multicolor/css/bootstrap.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/font-awesome.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/lightbox.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/animate.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/main.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/responsive.css' %}" rel="stylesheet"/>
+  {% endcompress %}
+ </head>
+ <!--/head-->
+ <body>
+  {% include 'header.html' %}
+  <!--/#header-->
+  <section id="page-breadcrumb">
+   <div class="vertical-center sun">
+    <div class="container">
+     <div class="row">
+      <div class="action">
+       <div class="col-sm-12">
+        <h1 class="title" data-django="title">
+         {{ title }}
+        </h1>
+        <p data-django="breadcrumbs-page">
+         <span><a href="/">{{ txt_home_650.text }}</a> / {{ title }}</span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#page-breadcrumb-->
+  <section class="padding-top wow fadeInUp" data-wow-delay="400ms" data-wow-duration="400ms" id="about-company">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-12 text-center">
+      <img alt="" class="margin-bottom" src="{{ img_imagesaboutus5_650.img.url }}"/>
+      <h1 class="margin-bottom">
+       {{ txt_487812c112c1d23f02410f0872e3db44_650.text }}
+      </h1>
+      <p>
+       {{ txt_8a95a10bedf7b1a4858aa7b2d75d392a_650.text }}
+       <br/>
+       {{ txt_65c16e49978510f2c2c24187658508aa_650.text }}
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#about-company-->
+  <section id="services">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="300ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="300ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon1_650.img.url }}"/>
+       </div>
+       <div data-django="html">
+        {{ html_0ccf4150f61b4e36249d4b1cd8530f12_650.html | safe }}
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="600ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="600ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon2_650.img.url }}"/>
+       </div>
+       <div data-django="html">
+        {{ html_170d566b7eaa6b70150c4e290a515cdf_650.html | safe }}
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="900ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="900ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon3_650.img.url }}"/>
+       </div>
+       <div data-django="html">
+        {{ html_5a3a330d37e17cd7a249abaa64effb19_650.html | safe }}
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#services-->
+  <section id="action">
+   <div class="vertical-center">
+    <div class="container">
+     <div class="row">
+      <div class="action count">
+       <div class="col-sm-3 text-center wow bounceIn" data-wow-delay="300ms" data-wow-duration="1000ms">
+        <div data-django="html">
+         {{ html_55fab9d42e13a0fad33a7eda47385c0d_650.html | safe }}
+        </div>
+       </div>
+       <div class="col-sm-3 text-center wow bounceIn" data-wow-delay="300ms" data-wow-duration="1000ms">
+        <div data-django="html">
+         {{ html_6a2092d731fbefb6fb7abd89a0411fd3_650.html | safe }}
+        </div>
+       </div>
+       <div class="col-sm-3 text-center wow bounceIn" data-wow-delay="300ms" data-wow-duration="1000ms">
+        <div data-django="html">
+         {{ html_cf1008db6433b4b4c3e2c89362c7b44d_650.html | safe }}
+        </div>
+       </div>
+       <div class="col-sm-3 text-center wow bounceIn" data-wow-delay="300ms" data-wow-duration="1000ms">
+        <div data-django="html">
+         {{ html_7e4347ae8e65cc2cecc0bedcbff146bf_650.html | safe }}
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#action-->
+  <section class="padding-top" id="company-information">
+   <div class="container">
+    <div class="row">
+     <div class="about-us">
+      <div class="col-sm-7 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
+       <h2 class="bold">
+        {{ txt_2fe74d1c9407c936cae840f555c2a52e_650.text }}
+       </h2>
+       <div class="row">
+        <div class="col-sm-5">
+         <img alt="" class="img-responsive" src="{{ img_imagesaboutus6_650.img.url }}"/>
+        </div>
+        <div class="col-sm-7" data-django="html">
+         {{ html_e7bb7474ea29e06cf63b3004c9235fee_650.html | safe }}
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-5 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
+       <div class="our-skills" data-django="html">
+        {{ html_664fa488859a2f1411acb8c939c27f90_650.html | safe }}
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#company-information-->
+  <section id="team">
+   <div class="container">
+    <div class="row" data-django="html">
+     {{ html_95dc1d010b5861cd57114b38cc59ec15_650.html | safe }}
+    </div>
+   </div>
+  </section>
+  <!--/#team-->
+  {% include 'footer.html' %}
+  <!--/#footer-->
+  {% compress js %}
+  <script src="{% static '/multicolor/js/jquery.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/bootstrap.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/lightbox.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/wow.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/jquery.countTo.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/main.js' %}" type="text/javascript">
+  </script>
+  {% endcompress %}
+ </body>
+</html>

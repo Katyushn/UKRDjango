@@ -1,0 +1,225 @@
+{
+  "name": "multicolor",
+  "articles": {
+    "1": "Effective Ways To Get More Out Of Organic",
+    "2": "Ways You Can Grow Your Creativity Using Organic"
+  },
+  "template": {
+    "default": "default.html",
+    "blog": {
+      "Blog default": "blog.html",
+      "Blog two": "blog-two.html",
+      "Blog three": "blog-three.html",
+      "Blog four": "blog-four.html",
+      "Portfolio one": "portfolio.html",
+      "Portfolio two": "portfolio-two.html",
+      "Portfolio three": "portfolio-three.html"
+    },
+    "article": {
+      "Article default": "blog-details.html",
+      "Article portfolio": "portfolio-details.html"
+    },
+    "pages": {
+      "About one": "aboutus.html",
+      "About two": "aboutus2.html",
+      "Coming soon": "coming-soon.html",
+      "Contact one": "contact.html",
+      "Contact two": "contact2.html",
+      "Home": "index.html",
+      "Pricing": "pricing.html",
+      "Service": "service.html",
+      "Shortcodes": "shortcodes.html"
+    },
+    "404": {
+      "404 default": "404.html"
+    }
+  },
+  "category": {
+    "Blog": {
+      "template": "Blog default",
+      "lorem": 8,
+      "subcategory": {
+        "Blog default": {
+          "template": "Blog default",
+          "lorem": 8,
+          "subcategory": {}
+        },
+        "Blog two": {
+          "template": "Blog two",
+          "lorem": 8,
+          "subcategory": {}
+        },
+        "Blog three": {
+          "template": "Blog three",
+          "lorem": 8,
+          "subcategory": {}
+        },
+        "Blog four": {
+          "template": "Blog four",
+          "lorem": 8,
+          "subcategory": {}
+        }
+      }
+    },
+    "Portfolio": {
+      "template": "Portfolio one",
+      "lorem": 8,
+      "subcategory": {
+        "Portfolio one": {
+          "template": "Portfolio one",
+          "lorem": 8,
+          "subcategory": {}
+        },
+        "Portfolio two": {
+          "template": "Portfolio two",
+          "lorem": 8,
+          "subcategory": {}
+        },
+        "Portfolio three": {
+          "template": "Portfolio three",
+          "lorem": 8,
+          "subcategory": {}
+        }
+      }
+    }
+  },
+  "menu": {
+    "Header menu": {
+      "type": "link",
+      "link": "javascript:void(0);",
+      "default": "False",
+      "submenu": {
+        "Home": {
+          "type": "template",
+          "template": "Home",
+          "default": "True",
+          "submenu": {}
+        },
+        "Pages": {
+          "type": "link",
+          "link": "javascript:void(0);",
+          "default": "False",
+          "submenu": {
+            "About one": {
+              "type": "template",
+              "link": "About one",
+              "default": "False",
+              "submenu": {}
+            },
+            "About two": {
+              "type": "template",
+              "link": "About two",
+              "default": "False",
+              "submenu": {}
+            },
+            "Service": {
+              "type": "template",
+              "link": "Service",
+              "default": "False",
+              "submenu": {}
+            },
+            "Pricing": {
+              "type": "template",
+              "link": "Pricing",
+              "default": "False",
+              "submenu": {}
+            },
+            "Contact one": {
+              "type": "template",
+              "link": "Contact one",
+              "default": "False",
+              "submenu": {}
+            },
+            "Contact two": {
+              "type": "template",
+              "link": "Contact two",
+              "default": "False",
+              "submenu": {}
+            },
+            "Coming soon": {
+              "type": "template",
+              "link": "Coming soon",
+              "default": "False",
+              "submenu": {}
+            }
+          }
+        },
+        "Blog": {
+          "type": "link",
+          "link": "javascript:void(0);",
+          "default": "False",
+          "submenu": {
+            "Blog default": {
+              "type": "category",
+              "link": "Blog default",
+              "default": "False",
+              "submenu": {}
+            },
+            "Blog two": {
+              "type": "category",
+              "link": "Blog two",
+              "default": "False",
+              "submenu": {}
+            },
+            "Blog three": {
+              "type": "category",
+              "link": "Blog three",
+              "default": "False",
+              "submenu": {}
+            },
+            "Blog four": {
+              "type": "category",
+              "link": "Blog four",
+              "default": "False",
+              "submenu": {}
+            },
+            "Blog details": {
+              "type": "article",
+              "link": "Ways You Can Grow Your Creativity Using Organic",
+              "default": "False",
+              "submenu": {}
+            }
+          }
+        },
+        "Portfolio": {
+          "type": "link",
+          "link": "javascript:void(0);",
+          "default": "False",
+          "submenu": {
+            "Portfolio one": {
+              "type": "category",
+              "link": "Portfolio one",
+              "default": "False",
+              "submenu": {}
+            },
+            "Portfolio two": {
+              "type": "category",
+              "link": "Portfolio two",
+              "default": "False",
+              "submenu": {}
+            },
+            "Portfolio three": {
+              "type": "category",
+              "link": "Portfolio three",
+              "default": "False",
+              "submenu": {}
+            },
+            "Portfolio details": {
+              "type": "article",
+              "link": "Ways You Can Grow Your Creativity Using Organic",
+              "default": "False",
+              "submenu": {}
+            }
+          }
+        },
+        "Shortcodes": {
+          "type": "template",
+          "template": "Shortcodes",
+          "default": "False",
+          "submenu": {}
+        }
+      }
+    }
+  }
+
+}

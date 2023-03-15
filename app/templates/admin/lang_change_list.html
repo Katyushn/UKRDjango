@@ -1,0 +1,8 @@
+{% extends "admin/change_list.html" %}
+
+{% block object-tools %}
+    <a href="{{ request.path }}langins/" class="btn btn-outline-success float-right ml-3">
+        <i class="fa fa-plus-circle"></i> &nbsp; Insert all languages
+    </a>
+    {{ block.super }}
+{% endblock %}

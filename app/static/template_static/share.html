@@ -1,0 +1,19 @@
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            {% if sent %}
+                <h1 data-django="text-default">E-mail успешно отправлен</h1>
+                <p>
+                    <span data-django="text-default">"Ссылка на статью: </span>{{ post.title }}" <span data-django="text-default">отправлена.</span>
+                </p>
+            {% else %}
+                <h4><span data-django="text-default">Поделиться статьей: "</span>{{ post.title }}<span data-django="text-default">" по e-mail</span></h4>
+                <form action="." method="post">
+                    {{ form.as_p }}
+                    {% csrf_token %}
+                    <input class="btn btn-warning btn-block" type="submit" value="{{ text_Submit.txt }}">
+                </form>
+            {% endif %}
+        </div>
+    </div>
+</div>

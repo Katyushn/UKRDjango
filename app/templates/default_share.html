@@ -1,0 +1,35 @@
+<div class="container mb-5">
+ <div class="row">
+  <div class="col-md-12">
+   {% if sent %}
+   <h1 data-django="text-default">
+    {{ txt_8c60684dba8aeb8cb14f259b6a5a8126_635.text }}
+   </h1>
+   <p>
+    <span data-django="text-default">
+     {{ txt_36b4fa3e9653ac47297a169b995e6af0_635.text }}
+    </span>
+    {{ post.title }}"
+    <span data-django="text-default">
+     {{ txt_30a3ab1691e2cb51304cf6efa83670cd_635.text }}
+    </span>
+   </p>
+   {% else %}
+   <h4>
+    <span data-django="text-default">
+     {{ txt_76fe1f9d9567b0aab13b6b7425e3a7ba_635.text }}
+    </span>
+    {{ post.title }}
+    <span data-django="text-default">
+     {{ txt_ab14c4ff933fc640d0be0d097b37eeb9_635.text }}
+    </span>
+   </h4>
+   <form action="." method="post">
+    {{ form.as_p }}
+                    {% csrf_token %}
+    <input class="btn btn-warning btn-block" type="submit" value="{{ text_Submit.txt }}"/>
+   </form>
+   {% endif %}
+  </div>
+ </div>
+</div>

@@ -1,0 +1,202 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %} <!DOCTYPE html><html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="{{ description }}" name="description"/>
+  <meta content="" name="author"/>
+  <title>
+   {{ title }}
+  </title>
+  <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <link href="{% static '/multicolor/images/ico/favicon.ico' %}" rel="shortcut icon"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-144-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-114-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-72-precomposed.png' %}" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="{% static '/multicolor/images/ico/apple-touch-icon-57-precomposed.png' %}" rel="apple-touch-icon-precomposed"/>
+  <meta content="{{ title }}" property="og:title"/>
+  <meta content="{{ description }}" property="og:description"/>
+  <meta content="blog" property="og:type"/>
+  <meta content="{{request.path}}" property="og:url"/>
+  <meta content="{{ category.img }}" property="og:image"/>
+  {% compress css %}
+  <link href="{% static '/multicolor/css/bootstrap.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/font-awesome.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/animate.min.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/lightbox.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/main.css' %}" rel="stylesheet"/>
+  <link href="{% static '/multicolor/css/responsive.css' %}" rel="stylesheet"/>
+  {% endcompress %}
+ </head>
+ <!--/head-->
+ <body>
+  {% include 'header.html' %}
+  <!--/#header-->
+  <section id="home-slider">
+   <div class="container">
+    <div class="row">
+     <div class="main-slider">
+      <div class="slide-text" data-django="html">
+       {{ html_56ef550f82151be54ad0dbefc6d69fa3_654.html | safe }}
+      </div>
+      <img alt="slider image" class="slider-hill" src="{{ img_imageshomesliderhill_654.img.url }}"/>
+      <img alt="slider image" class="slider-house" src="{{ img_imageshomesliderhouse_654.img.url }}"/>
+      <img alt="slider image" class="slider-sun" src="{{ img_imageshomeslidersun_654.img.url }}"/>
+      <img alt="slider image" class="slider-birds1" src="{{ img_imageshomesliderbirds1_654.img.url }}"/>
+      <img alt="slider image" class="slider-birds2" src="{{ img_imageshomesliderbirds2_654.img.url }}"/>
+     </div>
+    </div>
+   </div>
+   <div class="preloader">
+    <i class="fa fa-sun-o fa-spin">
+    </i>
+   </div>
+  </section>
+  <!--/#home-slider-->
+  <section id="services">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="300ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="300ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon1_654.img.url }}"/>
+       </div>
+       <div data-django="html">
+        {{ html_0ccf4150f61b4e36249d4b1cd8530f12_654.html | safe }}
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="600ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="600ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon2_654.img.url }}"/>
+       </div>
+       <div data-django="html">
+        {{ html_170d566b7eaa6b70150c4e290a515cdf_654.html | safe }}
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-4 text-center padding wow fadeIn" data-wow-delay="900ms" data-wow-duration="1000ms">
+      <div class="single-service">
+       <div class="wow scaleIn" data-wow-delay="900ms" data-wow-duration="500ms">
+        <img alt="" src="{{ img_imageshomeicon3_654.img.url }}"/>
+       </div>
+       <div data-django="html">
+        {{ html_5a3a330d37e17cd7a249abaa64effb19_654.html | safe }}
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#services-->
+  <section class="responsive" id="action">
+   <div class="vertical-center">
+    <div class="container">
+     <div class="row">
+      <div class="action take-tour">
+       <div class="col-sm-7 wow fadeInLeft" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+        {{ html_c7a7d5e6958c7b4788c00f0b29bfb5c3_654.html | safe }}
+       </div>
+       <div class="col-sm-5 text-center wow fadeInRight" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+        {{ html_303aa993815d49fa0d7d5dcb24860572_654.html | safe }}
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#action-->
+  <section id="features">
+   <div class="container">
+    <div class="row">
+     <div class="single-features">
+      <div class="col-sm-5 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="500ms">
+       <img alt="" class="img-responsive" src="{{ img_imageshomeimage1_654.img.url }}"/>
+      </div>
+      <div class="col-sm-6 wow fadeInRight" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+       {{ html_70eb0e37ce7dc033cd7590fbf7b0d075_654.html | safe }}
+      </div>
+     </div>
+     <div class="single-features">
+      <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+       {{ html_86e7d72aa69dfad22f9e285d6af270c4_654.html | safe }}
+      </div>
+      <div class="col-sm-5 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="500ms">
+       <img alt="" class="img-responsive" src="{{ img_imageshomeimage2_654.img.url }}"/>
+      </div>
+     </div>
+     <div class="single-features">
+      <div class="col-sm-5 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="500ms">
+       <img alt="" class="img-responsive" src="{{ img_imageshomeimage3_654.img.url }}"/>
+      </div>
+      <div class="col-sm-6 wow fadeInRight" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+       {{ html_1e476db1dbe0925ff58ab7f8a99a897e_654.html | safe }}
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#features-->
+  <section id="clients">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-12">
+      <div class="clients text-center wow fadeInUp" data-django="html" data-wow-delay="300ms" data-wow-duration="500ms">
+       {{ html_ba448a5aa4a0bc8168dc968ad69a1d11_654.html | safe }}
+      </div>
+      <div class="clients-logo wow fadeIn" data-wow-delay="600ms" data-wow-duration="1000ms">
+       <div class="col-xs-3 col-sm-2">
+        <a href="#">
+         <img alt="" class="img-responsive" src="{{ img_imageshomeclient1_654.img.url }}"/>
+        </a>
+       </div>
+       <div class="col-xs-3 col-sm-2">
+        <a href="#">
+         <img alt="" class="img-responsive" src="{{ img_imageshomeclient2_654.img.url }}"/>
+        </a>
+       </div>
+       <div class="col-xs-3 col-sm-2">
+        <a href="#">
+         <img alt="" class="img-responsive" src="{{ img_imageshomeclient3_654.img.url }}"/>
+        </a>
+       </div>
+       <div class="col-xs-3 col-sm-2">
+        <a href="#">
+         <img alt="" class="img-responsive" src="{{ img_imageshomeclient4_654.img.url }}"/>
+        </a>
+       </div>
+       <div class="col-xs-3 col-sm-2">
+        <a href="#">
+         <img alt="" class="img-responsive" src="{{ img_imageshomeclient5_654.img.url }}"/>
+        </a>
+       </div>
+       <div class="col-xs-3 col-sm-2">
+        <a href="#">
+         <img alt="" class="img-responsive" src="{{ img_imageshomeclient6_654.img.url }}"/>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--/#clients-->
+  {% include 'footer.html' %}
+  <!--/#footer-->
+  {% compress js %}
+  <script src="{% static '/multicolor/js/jquery.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/bootstrap.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/lightbox.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/wow.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static '/multicolor/js/main.js' %}" type="text/javascript">
+  </script>
+  {% endcompress %}
+ </body>
+</html>

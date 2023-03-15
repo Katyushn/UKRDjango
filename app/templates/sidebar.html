@@ -1,0 +1,87 @@
+{% load static %} {% load compress %} {% load mptt_tags %} {% load i18n %}<div class="col-md-3 col-sm-5">
+ <div class="sidebar blog-sidebar">
+  <div class="sidebar-item recent">
+   <h3>
+    {{ txt_8413c683b4b27cc3f4dbd4c90329d8ba_639.text }}
+   </h3>
+   <div data-django="sidebar-recent-comments">
+    {% for item in recent_comments %}
+    <a href="{{ item.post.get_absolute_url }}">
+     <div style="display: flex; align-items:center;">
+      <div style="width:30%;">
+       <img alt="" src="{{ item.post.img.url }}" style="width: 100%; "/>
+      </div>
+      <div style="width:70%; padding-left:15px;">
+       <div style="color: #000; font-size: 14px;">
+        {{ item.created }}
+       </div>
+       <h6>
+        {{ item.body }}
+       </h6>
+      </div>
+     </div>
+    </a>
+    <hr/>
+    {% endfor %}
+   </div>
+  </div>
+  <div class="sidebar-item categories">
+   <h3>
+    {{ txt_af1b98adf7f686b84cd0b443e022b7a0_639.text }}
+   </h3>
+   <ul class="nav navbar-stacked" data-django-category="blog">
+    {% recursetree category_blog %}
+    <li>
+     <a class="{% if node.id == category.id %} activ {% endif %}" href="{{ node.get_absolute_url }}">
+      {{ node.title }}
+     </a>
+     {% if not node.is_leaf_node %}
+     <ul>
+      {{ children }}
+     </ul>
+     {% endif %}
+    </li>
+    {% endrecursetree %}
+   </ul>
+  </div>
+  <div class="sidebar-item tag-cloud">
+   <h3>
+    {{ txt_ea911fe5664a3e79364a7e39370548c6_639.text }}
+   </h3>
+   <ul class="nav nav-pills" data-django="sidebar-tag">
+    {% for item in tags %}
+    <li>
+     <a href="{{ item.get_absolute_url }}">
+      {{ item.title }}
+     </a>
+    </li>
+    {% endfor %}
+   </ul>
+  </div>
+  <div class="sidebar-item popular">
+   <h3>
+    {{ txt_dcb5a78d631d968eee72aba95392e348_639.text }}
+   </h3>
+   <div class="gallery" data-django="sidebar-top-article">
+    {% for item in top_post %}
+    <a href="{{ item.get_absolute_url }}">
+     <div style="display: flex; align-items:center;">
+      <div style="width:30%;">
+       <img alt="" src="{{ item.img.url }}" style="width: 100%; "/>
+      </div>
+      <div style="width:70%; padding-left:15px;">
+       <div style="color: #000; font-size: 14px;">
+        {{ item.created }}
+       </div>
+       <h6>
+        {{ item.title }}
+       </h6>
+      </div>
+     </div>
+    </a>
+    <hr/>
+    {% endfor %}
+   </div>
+  </div>
+ </div>
+</div>

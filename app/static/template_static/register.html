@@ -1,0 +1,10 @@
+<h1 class="text-center mb-3" data-django="text-default">Регистрация</h1>
+<div class="border border-info rounded w-75 mx-auto p-3">
+    <div class="login-form">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary btn-block" data-django="text-default">Регистрация</button>
+        </form>
+    </div>
+</div>

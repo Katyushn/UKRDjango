@@ -1,0 +1,26 @@
+<h1 class="text-center mb-3">Edit your account</h1>
+<div class="border border-info rounded w-75 mx-auto p-3">
+    <p data-django="text-default">You can edit your account using the following form:</p>
+    <div class="login-form">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            {{ profile_form.as_p }}
+            <button type="submit" class="btn btn-primary btn-block" data-django="text-default">Save changes</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .errorlist {
+        margin-left: 20px;
+    }
+    .errorlist li {
+        padding: 3px 15px;
+        margin-bottom: 5px;
+        border: #721c24;
+        border-radius: 6px;
+        background: #f8d7da;
+        color: #721c24;
+    }
+</style>
